@@ -633,7 +633,8 @@ pathinfo: true
 
 此选项指定在浏览器中所引用的「此输出目录对应的**公开 URL**」。相对 URL(relative URL) 会被相对于 HTML 页面（或 `<base>` 标签）解析。相对于服务的 URL(Server-relative URL)，相对于协议的 URL(protocol-relative URL) 或绝对 URL(absolute URL) 也可是可能用到的，或者有时必须用到，例如：当将资源托管到 CDN 时。
 
-该选项的值是以 runtime(运行时) 或 loader(载入时) 所创建的每个 URL 为前缀。因此，在多数情况下，**此选项的值都会以`/`结束**。
+该选项的值会作为运行时(runtime)所创建的URL或加载器所创建的URL的前缀。因此，在多数情况下，**此选项的值都会以`/`结束**。比如：
+
 
 默认值是一个空字符串 `""`。
 
